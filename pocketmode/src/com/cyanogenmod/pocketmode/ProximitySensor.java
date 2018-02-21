@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.pocketmode;
+package com.cyanogenmod.pocketmode;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -24,7 +24,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
 
-import org.halogenos.io.FileUtils;
+import com.cyanogenmod.pocketmode.utils.FileUtils;
 
 public class ProximitySensor implements SensorEventListener {
 
@@ -76,7 +76,7 @@ public class ProximitySensor implements SensorEventListener {
 
     private void setFPProximityState(boolean isNear) {
         if (FileUtils.isFileWritable(FPC_FILE)) {
-            FileUtils.writeString(FPC_FILE, isNear ? "1" : "0");
+            FileUtils.writeLine(FPC_FILE, isNear ? "1" : "0");
         } else {
             Log.e(TAG, "Proximity state file " + FPC_FILE + " is not writable!");
         }
