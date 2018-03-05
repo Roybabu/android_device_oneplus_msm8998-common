@@ -42,7 +42,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/ooscam/lib/libopcamera.so:system/lib/libopcamera.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib/libopcameralib.so:system/lib/libopcameralib.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib/libRoadLineRebuildAPI.so:system/lib/libRoadLineRebuildAPI.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib/libts_detected_face_jni.so:system/lib/libts_detected_face_jni.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib64/libfilter-sdk.so:system/lib64/libfilter-sdk.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib64/libGNaviData.so:system/lib64/libGNaviData.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib64/libGNaviMap.so:system/lib64/libGNaviMap.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib64/libGNaviMapex.so:system/lib64/libGNaviMapex.so \
@@ -51,7 +53,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/ooscam/lib64/libopbaselib.so:system/lib64/libopbaselib.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib64/libopcamera.so:system/lib64/libopcamera.so \
     $(LOCAL_PATH)/prebuilts/ooscam/lib64/libopcameralib.so:system/lib64/libopcameralib.so \
-    $(LOCAL_PATH)/prebuilts/ooscam/lib64/libRoadLineRebuildAPI.so:system/lib64/libRoadLineRebuildAPI.so
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libRoadLineRebuildAPI.so:system/lib64/libRoadLineRebuildAPI.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libts_detected_face_jni.so:system/lib64/libts_detected_face_jni.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/vendor/lib/libSTDualCamPreviewBokeh.so:system/vendor/lib/libGNaviData.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so 
+
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
