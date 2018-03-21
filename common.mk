@@ -156,8 +156,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
-    OnePlusGallery \
-    GoogleCameraMod
+    GoogleCameraMod \
+    OnePlusGallery
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
