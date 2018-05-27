@@ -102,6 +102,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -422,7 +423,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
     com.android.future.usb.accessory
-	
+
 # Vendor
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.patch.level=OxygenOS_5.1.0
