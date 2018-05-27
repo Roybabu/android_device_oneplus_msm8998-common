@@ -83,6 +83,7 @@ PRODUCT_COPY_FILES += \
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -420,9 +421,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
     com.android.future.usb.accessory
 
-# Vendor security patch level
+# Vendor
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-08-01
+    ro.vendor.patch.level=OxygenOS_5.1.4
 
 # Vibrator
 PRODUCT_PACKAGES += \
