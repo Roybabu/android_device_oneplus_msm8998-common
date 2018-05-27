@@ -8,9 +8,18 @@
     "target_path": "kernel/oneplus/msm8998"
   }
   {
-    "repository": "android_packages_resources_devicesettings",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
   }
+  {
+    "repository": "device_oppo_common",
+    "target_path": "device/oppo/common"
+  }
+  {
+    "repository": "Roybabu/proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus"
+  }
 ]
+
 
 
