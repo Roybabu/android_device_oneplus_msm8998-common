@@ -287,6 +287,11 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+    LiveWallpapersPicker \
+    librs_jni
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_8998
