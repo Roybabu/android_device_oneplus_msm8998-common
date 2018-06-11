@@ -441,4 +441,8 @@
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- Button brightness -->
+    <bool name="config_button_brightness_support">true</bool>
+
 </resources>
