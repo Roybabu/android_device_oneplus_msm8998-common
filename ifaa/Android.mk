@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2017 The MoKee Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,4 +16,14 @@
 
 LOCAL_PATH := $(call my-dir)
 
-include $(call first-makefiles-under,$(LOCAL_PATH))
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := org.ifaa.android.manager
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+
+LOCAL_SRC_FILES := \
+    $(call all-java-files-under, java) \
+    $(call all-Iaidl-files-under, aidl)
+
+include $(BUILD_JAVA_LIBRARY)
