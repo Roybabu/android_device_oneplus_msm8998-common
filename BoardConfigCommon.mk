@@ -80,6 +80,7 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/msm8998
 TARGET_KERNEL_CONFIG := lineage_oneplus5_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_USE_SDCLANG := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
