@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
+    frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
@@ -78,10 +79,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
-
-# Device was launched with N
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.first_api_level=25
 
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -165,10 +162,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/vendor/lib/libmmcamera2_mct.so:system/vendor/lib/libmmcamera2_mct.so \
-    $(LOCAL_PATH)/prebuilts/vendor/lib/libmmcamera_imx371.so:system/vendor/lib/libmmcamera_imx371.so
-
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     cneapiclient \
@@ -242,6 +235,7 @@ PRODUCT_PACKAGES += \
     libvehiclenetwork-native
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -435,7 +429,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-07-01
+    ro.lineage.build.vendor_security_patch=2018-08-01
 
 # Vibrator
 PRODUCT_PACKAGES += \
